@@ -1,0 +1,4 @@
+Create a remote desktop app using golang ensuring the following features,
+1. use webRTC for connection ensuring peer to peer connectivity and security
+2. allow user to view and control remote system
+3. connection can be done by providing the unique system code generated in backend for the system

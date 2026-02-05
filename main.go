@@ -1,9 +1,15 @@
 package main
 
 import (
-	"fmt"
+	"fyne.io/fyne/v2/app"
 )
 
 func main() {
-	fmt.Printf("Hello World\n")
+	InitWebRTC()
+	a := app.New()
+	w := a.NewWindow("Hello")
+	RV := NewRemoteView()
+	go captureScreen(RV)
+	w.SetContent(RV)
+	w.ShowAndRun()
 }
